@@ -3,10 +3,10 @@ import pandas as pd
 import joblib
 import streamlit as st
 
-encoders = joblib.load('C:\\Users\\hp\\Downloads\\encoders_customer_churn.joblib')
-model = joblib.load('C:\\Users\\hp\\Downloads\\model_customer_churn.joblib')
-scaler = joblib.load('C:\\Users\\hp\\Downloads\\scaler_customer_churn.joblib')
-df = pd.read_csv("C:\\Users\\hp\\OneDrive\\Desktop\\Telco_Churn.csv")
+encoders = joblib.load('encoders_customer_churn.joblib')
+model = joblib.load('model_customer_churn.joblib')
+scaler = joblib.load('scaler_customer_churn.joblib')
+df = pd.read_csv("Telco_Churn.csv")
 df.columns = df.columns.str.strip()
 
 st.write("""
